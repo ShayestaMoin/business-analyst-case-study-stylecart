@@ -1,0 +1,28 @@
+# 1: Root Cause Analysis (RCA)
+# Root Cause Analysis: StyleCart Order Fulfillment Bottlenecks
+
+## Problem Statement
+During Q1/Q2, StyleCart experienced a **15% order cancellation rate**, an average **dispatch delay of 96 hours (4 days)**, and a **25% drop in CSAT**. Analysis reveals that **78% of order cancellations** occurred because items purchased online were discovered to be out of stock *after* payment processing.
+
+---
+
+## 5 Whys Analysis
+
+1. **Why are order dispatches delayed by 4 days?**
+   * *Because warehouse staff delay packing orders while manually verifying physical stock availability.*
+2. **Why do staff manually verify stock availability?**
+   * *Because stock counts in the online storefront regularly mismatch physical inventory on warehouse shelves.*
+3. **Why is storefront inventory inaccurate?**
+   * *Because stock levels update via a legacy batch CSV file export once daily at midnight.*
+4. **Why are stock levels updated only once daily?**
+   * *Because the current setup relies on a manual file upload script rather than automated data synchronization.*
+5. **Why is a manual file upload script being used?**
+   * *Because the storefront lacks a real-time API integration with the warehouse inventory management system (WMS).*
+
+---
+
+## Root Cause Statement
+The core driver of fulfillment delays and out-of-stock cancellations is the **lack of real-time API integration** between the storefront e-commerce platform and the Warehouse Management System (WMS).
+
+# Fishbone Diagram for Analysis:
+<img width="1746" height="661" alt="image" src="https://github.com/user-attachments/assets/7a3d764c-0534-4c0d-aa77-f9d1a5fe9a13" />
