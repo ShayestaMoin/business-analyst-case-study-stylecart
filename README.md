@@ -3,16 +3,13 @@
 Core Issue Identified: 78% of cancellations resulted from items being sold online after physical inventory had run out.
 Root Cause: Storefront relied on a single daily midnight CSV file batch upload rather than dynamic API synchronization with the Warehouse Management System (WMS).
 
-# 1: Root Cause Analysis (RCA)
 # Root Cause Analysis: StyleCart Order Fulfillment Bottlenecks
-
 ## Problem Statement
 During Q1/Q2, StyleCart experienced a **15% order cancellation rate**, an average **dispatch delay of 96 hours (4 days)**, and a **25% drop in CSAT**. Analysis reveals that **78% of order cancellations** occurred because items purchased online were discovered to be out of stock *after* payment processing.
 
 ---
 
 ## 5 Whys Analysis
-
 1. **Why are order dispatches delayed by 4 days?**
    * *Because warehouse staff delay packing orders while manually verifying physical stock availability.*
 2. **Why do staff manually verify stock availability?**
