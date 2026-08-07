@@ -27,7 +27,7 @@ Published formal Product Requirements Document (PRD) and Standard Operating Proc
 
 ![Project Status](https://img.shields.io/badge/Status-Approved-brightgreen)
 ![Domain](https://img.shields.io/badge/Domain-E--Commerce%20%26%20Logistics-blue)
-![Tools](https://img.shields.io/badge/Tools-Jira%20%7C%20Confluence%20%7C%20BPMN--2.0%20%7C%20Draw.io-orange)
+![Tools](https://img.shields.io/badge/Tools-Jira%20%7C%20Confluence%20%7C%20BPMN--2.0%20%7C%20Lucidchart-orange)
 
 ## Project Overview
 During Q1/Q2, StyleCart faced severe fulfillment bottlenecks that drove a **15% order cancellation rate**, an average **dispatch delay of 4 days (96 hours)**, and a **25% drop in CSAT**. This case study covers the end-to-end Business Analysis lifecycle executed to resolve these issues.
